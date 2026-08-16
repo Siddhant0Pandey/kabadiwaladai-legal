@@ -1,0 +1,515 @@
+<title>Kabadiwala Dai Privacy Policy</title>
+<style>
+  :root {
+    --ground: #F6F8F5;
+    --surface: #FFFFFF;
+    --surface-raised: #FCFDFB;
+    --ink: #16241C;
+    --ink-soft: #55655B;
+    --ink-faint: #8B9A90;
+    --accent: #0B6E32;
+    --accent-ink: #063D1C;
+    --accent-soft: #E6F1EA;
+    --line: #DEE5E0;
+    --shadow: 16, 36, 24;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0D1512;
+      --surface: #121D18;
+      --surface-raised: #16231C;
+      --ink: #E8F1EA;
+      --ink-soft: #9BB0A3;
+      --ink-faint: #647268;
+      --accent: #52B884;
+      --accent-ink: #C9EEDA;
+      --accent-soft: #1A3527;
+      --line: #223129;
+      --shadow: 0, 0, 0;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #0D1512;
+    --surface: #121D18;
+    --surface-raised: #16231C;
+    --ink: #E8F1EA;
+    --ink-soft: #9BB0A3;
+    --ink-faint: #647268;
+    --accent: #52B884;
+    --accent-ink: #C9EEDA;
+    --accent-soft: #1A3527;
+    --line: #223129;
+    --shadow: 0, 0, 0;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+
+  h1, h2, h3 {
+    font-family: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight: 600;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+
+  .shell {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: clamp(28px, 5vw, 64px) clamp(20px, 4vw, 48px) 80px;
+  }
+
+  /* ---------- Masthead ---------- */
+  .masthead {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+
+  .mark svg { width: 22px; height: 22px; }
+
+  .wordmark {
+    font-family: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  .wordmark span { color: var(--accent); }
+
+  .eyebrow {
+    margin: 28px 0 6px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+  }
+
+  h1.title {
+    margin: 0 0 14px;
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.08;
+  }
+
+  .lede {
+    max-width: 62ch;
+    color: var(--ink-soft);
+    font-size: 17px;
+    margin: 0 0 8px;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+
+  .meta-row strong { color: var(--ink-soft); font-weight: 600; }
+
+  hr.rule {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 36px 0;
+  }
+
+  /* ---------- Two-column layout ---------- */
+  .layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 48px;
+    align-items: start;
+  }
+
+  @media (max-width: 760px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.toc { display: none; }
+  }
+
+  nav.toc {
+    position: sticky;
+    top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  nav.toc .toc-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 10px;
+  }
+
+  nav.toc a {
+    display: block;
+    padding: 7px 0;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    padding-left: 12px;
+    margin-left: -12px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  nav.toc a:hover { color: var(--ink); border-left-color: var(--line); }
+
+  /* ---------- Content ---------- */
+  main { min-width: 0; }
+
+  section {
+    scroll-margin-top: 24px;
+    padding-bottom: 34px;
+    margin-bottom: 34px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  section:last-of-type { border-bottom: none; margin-bottom: 0; }
+
+  h2 {
+    font-size: 22px;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  h2 .num {
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
+
+  h3 {
+    font-size: 15.5px;
+    margin: 22px 0 8px;
+    font-weight: 700;
+    font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+
+  p { margin: 0 0 14px; max-width: 68ch; }
+  section > p:last-child { margin-bottom: 0; }
+
+  ul, ol { margin: 0 0 14px; padding-left: 22px; max-width: 66ch; }
+  li { margin-bottom: 6px; }
+  li:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 700; color: var(--ink); }
+
+  .table-wrap { overflow-x: auto; margin: 4px 0 18px; border: 1px solid var(--line); border-radius: 10px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 480px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+
+  thead th {
+    background: var(--surface-raised);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    font-weight: 700;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--surface-raised); }
+
+  .callout {
+    background: var(--accent-soft);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 4px 0 18px;
+    font-size: 14.5px;
+    color: var(--ink);
+  }
+
+  .callout p:last-child { margin-bottom: 0; }
+
+  .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 18px; }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--surface-raised);
+    border: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  .pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex: none; }
+
+  /* ---------- Contact card ---------- */
+  .contact-card {
+    margin-top: 44px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: clamp(22px, 4vw, 32px);
+    box-shadow: 0 1px 2px rgba(var(--shadow), 0.04), 0 8px 24px rgba(var(--shadow), 0.05);
+  }
+
+  .contact-card h2 { margin-bottom: 6px; }
+  .contact-card p { color: var(--ink-soft); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+  }
+
+  .contact-item .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 4px;
+  }
+
+  .contact-item .value { font-size: 15px; color: var(--ink); }
+  .contact-item .value a { text-decoration: none; font-weight: 600; }
+  .contact-item .value a:hover { text-decoration: underline; }
+
+  footer {
+    max-width: 1040px;
+    margin: 40px auto 0;
+    padding: 0 clamp(20px, 4vw, 48px) 40px;
+    font-size: 12.5px;
+    color: var(--ink-faint);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+
+<div class="shell">
+  <div class="masthead">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3.5c-3.5 2-6 5.6-6 9.3a6 6 0 0 0 12 0c0-3.7-2.5-7.3-6-9.3Z" stroke="#0B6E32" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M9.4 13.2c.6 1.7 1.9 2.9 2.6 3.4" stroke="#0B6E32" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="wordmark">Kabadiwala<span> Dai</span></div>
+  </div>
+
+  <p class="eyebrow">Legal</p>
+  <h1 class="title">Privacy Policy</h1>
+  <p class="lede">
+    Kabadiwala Dai is a doorstep scrap-collection marketplace connecting
+    customers with pickup partners across Nepal. This page explains, in
+    plain terms, what information we collect through the app, why we
+    collect it, and the choices you have.
+  </p>
+  <div class="meta-row">
+    <span><strong>Effective date:</strong> August 16, 2026</span>
+    <span><strong>Last updated:</strong> August 16, 2026</span>
+    <span><strong>Applies to:</strong> the Kabadiwala Dai Android app (Customer &amp; Partner)</span>
+  </div>
+
+  <hr class="rule" />
+
+  <div class="layout">
+    <nav class="toc" aria-label="Sections">
+      <div class="toc-label">On this page</div>
+      <a href="#collect">Information we collect</a>
+      <a href="#use">How we use it</a>
+      <a href="#share">Who we share it with</a>
+      <a href="#retention">How long we keep it</a>
+      <a href="#choices">Your choices</a>
+      <a href="#security">Security</a>
+      <a href="#children">Children's privacy</a>
+      <a href="#changes">Changes to this policy</a>
+      <a href="#contact">Contact us</a>
+    </nav>
+
+    <main>
+      <section id="collect">
+        <h2><span class="num">01</span>Information we collect</h2>
+        <p>We only collect what the app's actual features need to work — nothing is collected for advertising, and we don't run any third-party analytics or ad SDKs.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Category</th><th>What, specifically</th><th>Why</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Account info</td>
+                <td>Full name, email, phone number, password (stored hashed)</td>
+                <td>Creating and securing your account, letting partners and customers identify each other for a pickup</td>
+              </tr>
+              <tr>
+                <td>Location</td>
+                <td>Pickup address, and precise GPS coordinates when you use "Use Current Location" or the map picker</td>
+                <td>Matching your pickup request to the nearest available partner, and showing partners exactly where to go</td>
+              </tr>
+              <tr>
+                <td>Photos</td>
+                <td>Photos you optionally attach to a pickup request</td>
+                <td>Helping the assigned partner recognize what's being collected before they arrive</td>
+              </tr>
+              <tr>
+                <td>Transaction &amp; payment info</td>
+                <td>Order history, scrap categories and weights, payout amounts, and which payment method you choose (cash, eSewa, or Khalti)</td>
+                <td>Calculating payouts, keeping a record you can review, and processing payment</td>
+              </tr>
+              <tr>
+                <td>Partner verification</td>
+                <td>For partner accounts only: business details, vehicle info, and identity documents submitted during signup</td>
+                <td>Verifying partners before they're allowed to accept pickup jobs</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>We do not collect precise location in the background — only when the app is open and you take an action that needs it.</p>
+      </section>
+
+      <section id="use">
+        <h2><span class="num">02</span>How we use it</h2>
+        <ul>
+          <li>To create and maintain your account, and let you sign in securely.</li>
+          <li>To connect a customer's pickup request with the nearest available, verified partner.</li>
+          <li>To let a partner navigate to a pickup, weigh the scrap collected, and record what was paid out.</li>
+          <li>To show you your own order and transaction history within the app.</li>
+          <li>To respond if you contact us for support.</li>
+          <li>To detect and prevent fraud or abuse of the platform.</li>
+        </ul>
+        <p>We do not use your data to build advertising profiles, and we do not sell your data to anyone.</p>
+      </section>
+
+      <section id="share">
+        <h2><span class="num">03</span>Who we share it with</h2>
+        <p>We share only what's necessary to actually complete a pickup or a payment — never for marketing purposes.</p>
+
+        <div class="pill-row">
+          <span class="pill"><span class="dot"></span>Your assigned pickup partner</span>
+          <span class="pill"><span class="dot"></span>Payment processors (eSewa, Khalti)</span>
+          <span class="pill"><span class="dot"></span>Our hosting provider</span>
+          <span class="pill"><span class="dot"></span>Law enforcement, if legally required</span>
+        </div>
+
+        <h3>Pickup partners</h3>
+        <p>When a pickup is assigned, the partner sees your name, address, phone number, and pickup details — enough to complete the job. Customers see the assigned partner's name and business details.</p>
+
+        <h3>Payment processors</h3>
+        <p>If you pay via eSewa or Khalti, the transaction is handled directly by that provider under their own privacy policy — we don't store your card, wallet, or banking credentials ourselves.</p>
+
+        <h3>Service providers</h3>
+        <p>Our backend and database are hosted by third-party infrastructure providers who process data only on our instructions, to keep the app running.</p>
+
+        <div class="callout">
+          <p><strong>We never sell personal data</strong>, and we don't share it with advertisers or data brokers.</p>
+        </div>
+      </section>
+
+      <section id="retention">
+        <h2><span class="num">04</span>How long we keep it</h2>
+        <p>We keep account and transaction data for as long as your account is active, so your order history stays available to you. If you deactivate your account, we retain transaction records only as long as reasonably necessary for legal, tax, and dispute-resolution purposes, then delete or anonymize them.</p>
+      </section>
+
+      <section id="choices">
+        <h2><span class="num">05</span>Your choices</h2>
+        <ul>
+          <li><strong>Review and edit</strong> your profile information any time from the app's Profile tab.</li>
+          <li><strong>Deactivate your account</strong> directly in the app — Profile → Deactivate Account. This signs you out and stops your account from being used for new pickups.</li>
+          <li><strong>Location access</strong> can be turned off in your device's system settings; the app will still work, but you'll need to type your pickup address manually instead of using "Use Current Location."</li>
+          <li><strong>Contact us</strong> (see below) to request a copy of your data, or full deletion beyond what deactivation covers.</li>
+        </ul>
+      </section>
+
+      <section id="security">
+        <h2><span class="num">06</span>Security</h2>
+        <p>We use industry-standard measures to protect your information, including encrypted connections between the app and our servers and hashed password storage. No system is perfectly secure, but we work to keep your data protected and to respond quickly if anything looks wrong.</p>
+      </section>
+
+      <section id="children">
+        <h2><span class="num">07</span>Children's privacy</h2>
+        <p>Kabadiwala Dai is intended for users aged 18 and older, since booking a pickup and receiving payment both require the legal capacity to transact. We do not knowingly collect information from children. If you believe a child has created an account, contact us and we'll remove it.</p>
+      </section>
+
+      <section id="changes">
+        <h2><span class="num">08</span>Changes to this policy</h2>
+        <p>If we make material changes to how we handle your data, we'll update the date at the top of this page and, where appropriate, let you know inside the app. Continued use of Kabadiwala Dai after a change means you accept the updated policy.</p>
+      </section>
+
+      <section id="contact" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
+        <div class="contact-card">
+          <h2 style="border: none; margin: 0;"><span class="num">09</span>Contact us</h2>
+          <p>Questions about this policy, or a request about your data — reach out any time.</p>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <div class="label">Email</div>
+              <div class="value"><a href="mailto:siddhantpandey0922@gmail.com">siddhantpandey0922@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="label">Service</div>
+              <div class="value">Kabadiwala Dai</div>
+            </div>
+            <div class="contact-item">
+              <div class="label">Region served</div>
+              <div class="value">Kathmandu, Nepal</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<footer>
+  © 2026 Kabadiwala Dai. This policy describes the Kabadiwala Dai Android application only.
+</footer>
